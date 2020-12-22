@@ -187,7 +187,8 @@ h2 {
 
 .intro {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   color: #fff;
   text-align: center;
   letter-spacing: 1px;
@@ -212,6 +213,20 @@ h2 {
   right: 40px;
   left: 40px;
   z-index: 2;
+}
+.intro .image {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  max-width: none;
+  left: -50%;
+}
+@media (min-width: 800px) {
+  .intro .image {
+    position: static;
+    max-width: 100%;
+    height: auto;
+  }
 }
 .intro .name {
   margin-bottom: 30px;
