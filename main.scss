@@ -295,52 +295,45 @@ ul.col {
 	float: left;
 }
 
-.photo {
-    float: right;
-    border-radius: 50%;
-    width: 300px;
-}
-
 footer {
 	padding: 30px 0;
-    background-color: #38b687;
+    background-color: #3f4345;
     color: #fff;
     @include breakpoint(4) {
-        padding: 120px 0;
+        padding: 80px 0;
+    }
+    .logo {
+        img {
+            width: 75px;
+            margin: 0 auto;
+        }
     }
 	.social-links {
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
 		display: inline-block;
-        margin-top: 30px;
+        margin: 60px 0;
 		.social {
 			display: inline-flex;
 			color: #fff;
             align-items: center;
-            font-size: 20px;
-            font-family: 'Nexa';
+            font-size: 18px;
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(255,255,255,.4);
+            border-radius: 50%;
 			& +.social {
 				margin-left: 20px;
             }
             i {
-                margin-right: 8px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
             }
 		}
-		.social.github {
-			&:hover {
-				color: #4183c4;
-			}
-		}
-		.social.linkedin {
-			&:hover {
-			    color: #007bb6;
-			}
-		}
-		.social.codepen {
-			&:hover {
-				color: #222;
-			}
-		}
-	}
+    }
+    .attribution {
+        text-align: center;
+    }
 }
