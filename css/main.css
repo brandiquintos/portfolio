@@ -187,6 +187,7 @@ h2 {
 
 .intro {
   position: relative;
+  height: 100vh;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   color: #fff;
@@ -194,6 +195,12 @@ h2 {
   letter-spacing: 1px;
   padding: 0;
   overflow: hidden;
+}
+@media (min-width: 800px) {
+  .intro {
+    min-height: 0;
+    height: 100vh;
+  }
 }
 .intro .overlay {
   position: absolute;
